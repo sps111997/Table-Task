@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="table.css" />
+  </head>
+  <body>
+    <div class = "main-container">
+    <div class="search-bar">
+      <input
+        class="search-box"
+        type="text"
+        onkeyup="search()"
+        id="myInput"
+        placeholder="Search for names.."
+        title="Type in a name"
+      />
+      <button class="button" onclick="searchClear()">Clear</button>
+    </div>
+    <div class="toggle-container " style="background-color: white;">
+      <input
+        type="checkbox"
+        id="switch"
+        onclick="sortPrice()"
+        class="checkbox"
+      />
+      <label for="switch" class="toggle">
+        <p>Min Max</p>
+      </label>
+    </div>
+    </div>
+    <div id="message">NO DATA FOUND</div>
+      <div id="table"></div>
+
+    <script src="table.js"></script>
+  </body>
+</html>
